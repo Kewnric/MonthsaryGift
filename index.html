@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shan's Monthsary Gift</title>
+	<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+    <link rel="stylesheet" href="./Ancient_Language/CSS/style.css">
+</head>
+<body>
+    <div class="page_animations">
+        <div class="animation_0"></div>
+        <div class="img_1"></div>
+        <div class="img_2"></div>
+        <div class="img_3"></div>
+        <div class="img_4"></div>
+    </div>
+    <p id="closeDiv">
+        Loading...
+    </p>
+    <button id="myButton" class="btn_0">
+        <span>
+            I LOVE YOU SHAN, MWA !!
+        </span>
+    </button>
+    <script type="text/javascript">
+        document.getElementById("myButton").onclick = function () {
+            setTimeout(function() {
+                location.href = "./Ancient_Language/Webpages/homepage.html";
+            }, 1500); // 2000 milliseconds (2 seconds) delay
+            var targetDiv = document.getElementById("myButton");
+            var closeDiv = document.getElementById("closeDiv");
+            targetDiv.style.display = "none";
+            closeDiv.style.opacity = "100%";
+        };
+    </script>
+</body>
+</html>

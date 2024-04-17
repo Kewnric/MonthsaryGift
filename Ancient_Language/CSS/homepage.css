@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body {
+    background-color: #ffe4e4;
+    margin-top: 40px;
+}
+
+.img_1 {
+    background-image: url(../../Resources/Animations/ani_18.gif);
+    height: 230px;
+    width: 240px;
+    background-repeat: no-repeat;
+    margin-top: 185px;
+    margin-left: 390px;
+    position: fixed;
+}
+
+.img_2 {
+    background-image: url(../../Resources/Animations/ani_17.gif);
+    height: 245px;
+    width: 245px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 157px;
+    margin-left: 845px;
+    position: fixed;
+    z-index: 10;
+}
+
+h1 {
+    position: fixed;
+    font-family: 'Alegreya';
+    margin-left: 625px;
+    margin-top: 80px;
+}
+
+button {
+    padding: 20px 100px 20px 100px;
+    border-radius: 20px;
+    margin-top: 420px;
+    position: fixed;
+    opacity: 0.4; /* Initial opacity */
+    transition: transform 0.3s ease; /* Smooth transition */
+    z-index: 99;
+}
+
+#yes {
+    margin-left: 380px;
+}
+
+#no {
+    margin-left: 892px;
+    transition: transform 0.2s ease; /* Smooth transition */
+}
+
+#yes:hover,
+#no:hover {
+    opacity: 1; /* Fully visible on hover */
+}
+
+#closeDiv1{
+    position: fixed;
+    margin-top: 430px;
+    margin-left: 435px;
+    font-size: 27px;
+    font-family: cursive;
+    transition: ease .6s;
+    opacity: 0;
+}
+
+#closeDiv2{
+    position: fixed;
+    margin-top: 430px;
+    margin-left: 955px;
+    font-size: 27px;
+    font-family: cursive;
+    transition: ease .6s;
+    opacity: 0;
+}

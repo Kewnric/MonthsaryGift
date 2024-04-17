@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+    /*background-color: #2596be;*/
+}
+
+.animation_0 {
+    background-image: url(../../Resources/Animations/ani_3.gif);
+    height: 350px;
+    width: 490px;
+    background-repeat: no-repeat;
+    margin-top: 185px;
+    margin-left: 565px;
+    position: fixed;
+    z-index: 10;
+}
+
+.img_1,
+.img_2,
+.img_3,
+.img_4 {
+    position: fixed;
+    background-size: contain;
+    background-image: url(../../Resources/Animations/ani_12.gif);
+    height: 190px;
+    width: 190px;
+    background-repeat: no-repeat;
+}
+
+.img_1 {
+    margin-top: 0px;
+    margin-left: -5px;
+}
+
+.img_2 {
+    margin-top: 0px;
+    margin-left: 1350px;
+}
+
+.img_3 {
+    margin-top: 530px;
+    margin-left: -5px;
+}
+
+.img_4 {
+    margin-top: 530px;
+    margin-left: 1350px;
+}
+
+.btn_0 {
+    position: fixed;
+    margin-top: 460px;
+    margin-left: 645px;
+    padding: 15px 32px;
+    font-family: 'Alegreya';
+    font-style: oblique;
+    border-radius: 20px;
+    transition: .5s ease;
+    font-size: 15px;
+    background-color: #fe6d6c;
+    opacity: 0.65;
+    z-index: 100;
+}
+
+.btn_0:hover {
+    opacity: 1;
+}
+
+p {
+    position: fixed;
+    margin-top: 468px;
+    margin-left: 705px;
+    font-size: 27px;
+    font-family: 'Alegreya';
+    opacity: 0;
+    transition: ease .6s;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 600px;
+    margin-left: 650px;
+    position: fixed;
+}
+
+@keyframes love {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.letter {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff416c;
+    animation: love 2s infinite;
+}
+
+.letter:nth-child(odd) {
+    color: #4b7bec;
+}
+
+.letter:nth-child(2n) {
+    color: #00d2d3;
+}
+.container{
+    position: fixed;
+    margin-top: 560px;
+    margin-left: 590px;
+}
+.background_veins_1,
+.background_veins_2,
+.background_veins_3,
+.background_veins_4,
+.background_veins_5,
+.background_veins_6,
+.background_veins_7 {
+    position: fixed;
+    background-size: contain;
+    background-image: url(../../Resources/Images/img_2.png);
+    height: 190px;
+    width: 190px;
+    background-repeat: no-repeat;
+    margin-top: -90px;
+}
+.background_veins_1{
+    margin-left: 200px;
+}
+.background_veins_2{
+    margin-left: 350px;
+    margin-top: -60px;
+}
+.background_veins_3{
+    margin-left: 500px;
+    margin-top: -90px;
+}
+.background_veins_4{
+    margin-left: 650px;
+    margin-top: -90px;
+}
+.background_veins_5{
+    margin-left: 800px;
+    margin-top: -90px;
+}
+.background_veins_6{
+    margin-left: 950px;
+    margin-top: -50px;
+}
+.background_veins_7{
+    margin-left: 1100px;
+    margin-top: -90px;
+}

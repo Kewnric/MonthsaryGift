@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+    <link rel="stylesheet" href="../../Ancient_Language/CSS/homepage.css">
+    <title>Shan's Monthsary Gift</title>
+</head>
+<body>
+    <div class="img_1"></div>
+    <div class="img_2"></div>
+    <h1> Do You Love Me? </h1>
+    
+    <button id="yes"> Yes </button>
+    <button id="no" class="moving-button" onmousemove="moveButton(event)"> NO </button>
+
+    
+    <p id="closeDiv1">
+        Yayy mwa
+    </p>
+
+</body>
+<script type="text/javascript">
+    
+    document.getElementById("yes").onclick = function () {
+        setTimeout(function() {
+            location.href = "yes_route.html";
+        }, 1500); // 2000 milliseconds (2 seconds) delay
+        
+        var targetDiv = document.getElementById("yes");
+            var closeDiv = document.getElementById("closeDiv1");
+            targetDiv.style.display = "none";
+            closeDiv.style.opacity = "100%";
+    };
+
+    
+    function moveButton(event) {
+            const button = document.querySelector('.moving-button');
+            const rect = button.getBoundingClientRect();
+            const centerX = rect.left + rect.width / 2;
+            const centerY = rect.top + rect.height / 2;
+
+            // Calculate the distance from cursor to button center
+            const dx = event.clientX - centerX;
+            const dy = event.clientY - centerY;
+
+            // Define a multiplier for wider range of movement
+            const multiplier = 3.5; // Adjust as needed
+
+            // Move the button away from the cursor
+            button.style.transform = `translate(${-dx * multiplier}px, ${-dy * multiplier}px)`;
+        }
+</script>
+</html>
